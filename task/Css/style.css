@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    background-color: #ce9260;
+}
+#section1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+#section1 #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+#section1 #navbar li{
+    display: flex;
+    list-style-type: none;
+    padding: 15px 20px;
+    
+}
+#section1 #navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+}
+#section1 #navbar li a:hover{
+    color: #ce9260;
+}
+#section2 img{
+    width: 100%;
+}
+#section3{
+    margin: 60px 20px;
+}
+.about{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: rgb(255, 254, 254);
+    margin: 0 150px;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 10px 10px 15px #888888;
+}
+.about:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.15);
+}
+.about h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.about p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+#section4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#section4 .container{
+    margin:50px 150px;
+}
+#section4 .box1{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    position: relative;
+    box-shadow: 10px 10px 15px #888888;
+    text-align: center;
+}
+#section4 .box1:hover{
+        transition: all 0.3s ease;
+        transform: scale(1.15);
+}
+#section4 .thinking{
+    text-align: center;
+    padding: 10px 0;
+}
+.fa-lightbulb{
+    font-size: 40px;
+    color: #ce9260;
+   
+}
+#section4 .thinking h2{
+    font-size: 20px;
+    padding: 8px 0;
+    color: #ce9260;
+}
+#section4 .thinking p{
+    text-align: start;
+    font-size: 20px;
+}
+
+#section4 .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#section5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #ce9260;
+    height: 20vh;
+}
+#section5 .done h2{
+    font-size: 40px;
+    padding: 5px 15px;
+}
+#section5 .done h5{
+    font-size: 20px;
+    padding: 5px 15px;
+}
+.form{
+    display: flex;
+    text-align: center;
+}
+.form input{
+    border: 2px solid black;
+    width: 450px;
+    height: 50px;
+}
+button{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: darkcyan;
+}
+
+@media (max-width:799px) {
+    
+    #section1{
+        margin: 0px 80px;
+    }
+    #section1 #navbar li{
+        padding: 12px 15px;
+    }
+    #section1 #navbar li a{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #section3{
+        margin: 60px 20px;
+    }
+    .about{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        background-color: rgb(255, 254, 254);
+        margin: 0 50px;
+        border: 1px solid rgb(235, 235, 235);
+        box-shadow: 10px 10px 15px #888888;
+    }
+    
+    .about h1{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .about p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    #section4{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    #section4 .container{
+        margin:20px 40px;
+    }
+    
+    
+    .fa-lightbulb{
+        font-size: 35px;       
+    }
+    #section4 .thinking h2{
+        font-size: 15px;
+    }
+    #section4 .thinking p{
+        text-align: start;
+        font-size: 10px;
+    }
+    
+    #section4 .container{
+        justify-content: space-between;
+    }
+    #section5{
+        justify-content: space-around;
+        margin-top: 30px;
+        background-color: #ce9260;
+        height: 30vh;
+    }
+    #section5 .done h2{
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    #section5 .done h5{
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    .form{
+        display: flex;
+        text-align: center;
+    }
+    .form input{
+        border: 2px solid black;
+        width: 300px;
+        height: 40px;
+    }
+    button{
+        height: 40px;
+        width: 150px;
+        border: 2px solid black;
+        background-color: darkcyan;
+    }
+}
+
+@media (max-width:477px) {
+    #section1{
+        margin: 0px 40px;
+    }
+    #section1 #navbar li{
+        padding: 12px 12px;
+    }
+    #section1 #navbar li a{
+        font-size: 8px;
+        font-weight: 300;
+    }
+    #section1 img{
+        width: 70px;
+    }
+    #section3{
+        margin: 50px 0px;
+    }
+    .about{
+        margin: 0 30px;
+    }
+    .about h1{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .about p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    #section4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section4 .container{
+        margin:20px 40px;
+    }
+    .fa-lightbulb{
+        font-size: 30px;       
+    }
+    #section4 .thinking h2{
+        font-size: 13px;
+    }
+    #section4 .thinking p{
+        text-align: start;
+        font-size: 10px;
+    }
+    
+    #section4 .container{
+        justify-content: center;
+    }
+    #section5{
+        justify-content: space-around;
+        margin-top: 20px;
+        background-color: #ce9260;
+        height: 20vh;
+    }
+    #section5 .done h2{
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    #section5 .done h5{
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .form{
+        display: flex;
+        text-align: center;
+    }
+    .form input{
+        border: 2px solid black;
+        width: 100px;
+        height: 20px;
+    }
+    button{
+        height: 20px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: darkcyan;
+    }
+}
